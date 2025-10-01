@@ -1,0 +1,20 @@
+{
+  "name": "vteemo-frontend",
+  "version": "1.0.0",
+  "description": "VTEEMO Premium Video Platform - Emergency Deploy",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve -s . -l 3000",
+    "build": "echo 'Static files ready'",
+    "deploy": "echo 'Deploying to Liara...'"
+  },
+  "keywords": ["vteemo", "video", "premium", "platform"],
+  "author": "VTEEMO Team",
+  "license": "MIT",
+  "dependencies": {
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
