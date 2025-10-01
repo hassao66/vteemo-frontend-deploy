@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VTEEMO - Premium Video Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #6A0DAD 0%, #4B0082 100%);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 20px rgba(106, 13, 173, 0.3);
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: 800;
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .nav {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .nav-item {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            color: #e5e7eb;
+            margin-bottom: 2rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            color: #1a1a2e;
+            font-weight: 700;
+            font-size: 1.1rem;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.4);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+        
+        .feature-card {
+            background: rgba(106, 13, 173, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(106, 13, 173, 0.2);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(106, 13, 173, 0.3);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #FFD700;
+        }
+        
+        .feature-desc {
+            color: #e5e7eb;
+            line-height: 1.6;
+        }
+        
+        .status {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #10b981;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            border-top: 1px solid rgba(106, 13, 173, 0.2);
+            color: #9ca3af;
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="status">✅ Live & Working</div>
+    
+    <header class="header">
+        <div class="logo">VTEEMO</div>
+        <nav class="nav">
+            <a href="#" class="nav-item">خانه</a>
+            <a href="#" class="nav-item">پرمیوم</a>
+            <a href="#" class="nav-item">آپلود</a>
+            <a href="#" class="nav-item">ورود</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <section class="hero">
+            <h1>VTEEMO</h1>
+            <p>پلتفرم پرمیوم اشتراک‌گذاری ویدیو</p>
+            <p>Premium Video Sharing Platform</p>
+            <a href="#" class="cta-button">🚀 شروع کنید</a>
+        </section>
+        
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🎥</div>
+                <h3 class="feature-title">ویدیوهای پرمیوم</h3>
+                <p class="feature-desc">دسترسی به محتوای حصری و با کیفیت بالا</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">👑</div>
+                <h3 class="feature-title">عضویت طلایی</h3>
+                <p class="feature-desc">ویژگی‌های اختصاصی برای کاربران پرمیوم</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🌟</div>
+                <h3 class="feature-title">جوایز و امتیازات</h3>
+                <p class="feature-desc">سیستم جایزه برای فعالیت در پلتفرم</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3 class="feature-title">ریسپانسیو</h3>
+                <p class="feature-desc">سازگار با تمام دستگاه‌ها</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3 class="feature-title">امنیت بالا</h3>
+                <p class="feature-desc">محافظت از اطلاعات کاربران</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3 class="feature-title">سرعت بالا</h3>
+                <p class="feature-desc">بارگذاری سریع و تجربه روان</p>
+            </div>
+        </section>
+    </div>
+    
+    <footer class="footer">
+        <p>© 2024 VTEEMO - Premium Video Platform | Built with ❤️</p>
+        <p>Status: ✅ Working | Domain: vteemo.com</p>
+    </footer>
+    
+    <script>
+        console.log('🚀 VTEEMO Emergency Deploy Loaded Successfully!');
+        console.log('📍 URL:', window.location.href);
+        console.log('🕐 Time:', new Date().toISOString());
+        
+        // Add some interactivity
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                alert('🚧 Feature coming soon in full React app!');
+            });
+        });
+        
+        document.querySelector('.cta-button').addEventListener('click', (e) => {
+            e.preventDefault();
+            alert('🎉 VTEEMO is working! Full React app deployment next.');
+        });
+    </script>
+</body>
+</html>
